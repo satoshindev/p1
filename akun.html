@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deskripsi singkat tentang halaman ini.">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Web Development">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://www.contohdomainanda.com">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+</head>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '#image-carousel' ).mount();
+    } );
+  </script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .bg-dasar {
+        background-color: #e6e4e4;
+    }
+    .navbar-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(56, 56, 56);
+    }
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .menu-first {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom dengan ukuran sama */
+        gap: 10px; /* Jarak antar menu */
+    }
+
+    .menu-item {
+        padding: 5px;
+        text-align: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.05); /* Efek saat hover */
+    }
+    .menu-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-left: 4px solid red;
+    padding-left: 10px;
+    }
+
+    .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .menu-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    }
+
+    .menu-fungsi {
+    display: flex;
+    align-items: center;
+    }
+
+    .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+    }
+
+    .text {
+    font-size: 16px;
+    color: #333;
+    }
+
+    .arrow {
+    font-size: 16px;
+    color: #888;
+    }
+
+    .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    }
+
+    .whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    }
+    footer.menu-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f59f00;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    footer.menu-sticky ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    footer.menu-sticky li {
+        text-align: center;
+    }
+
+    footer.menu-sticky a {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    footer.menu-sticky a div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer.menu-sticky .highlight {
+        background: yellow;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        border: 3px solid black;
+    }
+
+    footer.menu-sticky .highlight img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+</style>
+<body class="bg-dasar">
+    <div>
+        <div style="display: flex;flex-direction: row;justify-content: start;padding: 10px;">
+            <img src="https://placehold.co/400?text=LOGO" style="width: 100px;height: 100px;border-radius: 100%;border: 3px solid #028aed;">
+            <div style="display: flex;flex-direction: column;justify-content: start;margin-left:10px">
+                <h1 style="font-size: 30px;">812***0231</h1>
+                <b>Level 1</b>
+                <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                    <span style="display: flex;flex-direction: row;margin-right: 5px;">
+                        <p style="font-size: 10px;">Kode Undangan Anda : </p>
+                        <b id="reffDisalin" style="font-size: 10px;">123321</b>
+                    </span>
+                    <div id="btnSalin" style="background-color:white;text-align: center;padding: 5px;border: 1px solid #212529;border-radius: 10px;font-size: 10px;">Salinkan</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex;flex-direction: row; justify-content: space-between;padding: 20px;background-color: #028aed;margin: 10px;">
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <p style="color: white;">Saldo Akun</p>
+                    <b  style="color: white;">Rp. 10.000.000</b>
+                </div>
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <p style="color: white;">Saldo Asset</p>
+                    <b style="color: white;">Rp. 10.000.000</b>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute;z-index: 3;right: 0;left: 0;display: flex;flex-direction: row;justify-content: space-between;margin: 10px;">
+            <a style="text-decoration: none;color:white;background-color: #028aed;padding: 7px 10px;border-radius: 10px;text-align: center;width: 180px;margin-right: 5px;" href="deposit.html">
+                <p style="padding:0px;background-color:white;border-radius:10px;color:#028aed!important;"><b>Total Bonus</b><br>Rp. 10.000.000</p>
+                </a>
+            <a style="text-decoration: none;color:white;background-color: #028aed;padding: 7px 10px;border-radius: 10px;text-align: center;width: 180px;margin-left: 5px;" href="penarikan.html">
+                <p style="padding:0px;background-color:white;border-radius:10px;color:#028aed!important;"><b>Total Deviden</b><br>Rp. 10.000.000</p>
+                </a>
+        </div>
+        <div style="position: absolute;width: 100%;height: 80px;top: 264px;z-index:2;background-color: #e6e4e4;border-radius: 0 0 50% 50%;"></div>
+    </div>
+
+    <div style="margin-top: 84px;padding-top: 50px;background-color: white;position: relative;z-index: 1;">
+        <div>
+            <div class="menu-first">
+                <a href="deposit.html" class="menu-item">
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <img src="bank.png" style="width: 40px;height: auto;" alt="Menu">
+                        <p style="font-size: 12px;font-weight: bold;color:black;">Isi Ulang</p>
+                    </div>
+                </a>
+                <a href="penarikan.html" class="menu-item">
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <img src="atm-card.png" style="width: 40px;height: auto;" alt="Menu">
+                        <p style="font-size: 12px;font-weight: bold;color:black;">Menarik</p>
+                    </div>
+                </a>
+                <a href="checkin.html" class="menu-item">
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <img src="check.png" style="width: 40px;height: auto;" alt="Menu">
+                        <p style="font-size: 12px;font-weight: bold;color:black;">Check In</p>
+                    </div>
+                </a>
+                <a href="transaksi.html" class="menu-item">
+                    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <img src="report.png" style="width: 40px;height: auto;" alt="Menu">
+                        <p style="font-size: 12px;font-weight: bold;color:black;">Transaksi</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Fungsi umum</h3>
+            <ul class="menu-list">
+              <li>
+                <a href="#" class="menu-fungsi">
+                  <span class="icon">📖</span>
+                  <span class="text">Pusat Bantuan</span>
+                </a>
+                <span class="arrow">></span>
+              </li>
+              <li>
+                <a href="#" class="menu-fungsi">
+                  <span class="icon">🌐</span>
+                  <span class="text">Ganti bahasa</span>
+                </a>
+                <span class="arrow">></span>
+              </li>
+              <li>
+                <a href="#" class="menu-fungsi">
+                  <span class="icon">🔒</span>
+                  <span class="text">Kata sandi</span>
+                </a>
+                <span class="arrow">></span>
+              </li>
+              <li>
+                <a href="#" class="menu-fungsi">
+                  <span class="icon">👥</span>
+                  <span class="text">Bergabung dengan obrolan grup</span>
+                </a>
+                <span class="arrow">></span>
+              </li>
+              <li>
+                <a href="#" class="menu-fungsi">
+                  <span class="icon">ℹ️</span>
+                  <span class="text">Tentang kami</span>
+                </a>
+                <span class="arrow">></span>
+              </li>
+            </ul>
+            <div class="whatsapp-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+            </div>
+          </div>
+    </div>
+
+
+    <footer class="menu-sticky">
+        <ul>
+            <li><a href="#home">
+                <div>
+                    <i class="fa fa-home" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Beranda</p>
+                </div>
+            </a></li>
+            <li><a href="produk.html">
+                <div>
+                    <i class="fa fa-cart-shopping" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Produk</p>
+                </div>
+            </a></li>
+            <li>
+                <a href="#highlight">
+                    <div class="highlight">
+                        <img src="flash.png" alt="Highlight">
+                    </div>
+                </a>
+            </li>
+            <li><a href="anggota.html">
+                <div>
+                    <i class="fa fa-users" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Anggota</p>
+                </div>
+            </a></li>
+            <li><a href="akun.html">
+                <div>
+                    <i class="fa fa-cog" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Akun</p>
+                </div>
+            </a></li>
+        </ul>
+    </footer>
+    <script>
+    
+    // Pilih elemen berdasarkan ID
+    const btnSalin = document.getElementById('btnSalin');
+    const reffDisalin = document.getElementById('reffDisalin');
+
+    // Tambahkan event listener pada tombol salin
+    btnSalin.addEventListener('click', () => {
+        // Ambil teks dari elemen reffDisalin
+        const teks = reffDisalin.innerText;
+
+        // Gunakan navigator.clipboard untuk menyalin teks ke clipboard
+        navigator.clipboard.writeText(teks).then(() => {
+            // Berikan umpan balik kepada pengguna bahwa teks berhasil disalin
+            alert(`Teks berhasil disalin: ${teks}`);
+        }).catch((err) => {
+            console.error('Gagal menyalin teks:', err);
+        });
+    });
+
+    </script>
+</body>
+</html>

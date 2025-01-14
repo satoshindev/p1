@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deskripsi singkat tentang halaman ini.">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Web Development">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://www.contohdomainanda.com">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+</head>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '#image-carousel' ).mount();
+    } );
+  </script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container {
+        padding: 10px;
+    }
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .blue-card {
+    background-color: #4285f4;
+    color: white;
+    }
+
+    .blue-card h3 {
+    margin: 5px 0;
+    }
+
+    .deviden-btn {
+    background-color: white;
+    color: #ff0000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
+
+    .red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+
+    .gray-button {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+
+    .product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    }
+
+    .product-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .product-info {
+    width: 55%;
+    }
+
+    .product-info h4 {
+    margin: 5px 0;
+    }
+
+    .small-text span {
+    color: #4285f4;
+    font-weight: bold;
+    }
+
+    .details-section {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    }
+
+    .detail {
+    text-align: center;
+    }
+
+    .detail h5 {
+    color: orange;
+    margin: 5px 0;
+    }
+
+    .action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .price h3 {
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    }
+
+    .buy-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    .tab-active {
+        background-color: red;
+        color: white;
+    }
+
+    footer.menu-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f59f00;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    footer.menu-sticky ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    footer.menu-sticky li {
+        text-align: center;
+    }
+
+    footer.menu-sticky a {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    footer.menu-sticky a div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer.menu-sticky .highlight {
+        background: yellow;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        border: 3px solid black;
+    }
+
+    footer.menu-sticky .highlight img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+</style>
+<body class="bg-dasar">
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="card blue-card">
+            <div style="display: flex;flex-direction: column;">
+                <div>
+                    <p>Total Penghasilan</p>
+                    <h3>Rp 2.750</h3>
+                </div>
+                <div>
+                    <p>Jumlah Total Investasi</p>
+                    <h3>Rp 50.000</h3>
+                </div>
+            </div>
+            <a href="transaksi.html" style="display: flex;margin-top: 100px;">
+                <button class="deviden-btn">Deviden</button>
+            </a>
+        </div>
+    
+        <div class="button-group">
+            <button class="gray-button" id="tab-produk-dasar" style="margin-right: 10px;">Produk Dasar</button>
+            <button class="gray-button" id="tab-produk-tinggi">Produk penghasilan tinggi</button>
+        </div>
+        
+        <div id="content-produk-dasar" class="tab-content">
+            <!-- Konten Produk Dasar -->
+            <div class="product-section">
+                <div style="display: flex;flex-direction: row;">
+                    <div class="product-image" style="margin-right: 10px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" style="width: 100%;border-radius: 30px;">
+                    </div>
+                    <div class="product-info">
+                    <h4>Produk Dasar</h4>
+                    <p class="small-text" style="text-align:center;padding: 10px;margin-bottom:10px;color:#14a745;background-color: #82ffac;">Sisa pembelian <b>1</b></p>
+                    <p class="small-text" style="text-align:center;padding: 10px;color:#4285f4;background-color: rgba(120, 171, 253, 0.467);">Siklus <b>90 Hari</b></p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;justify-content: center;">
+                    <div class="details-section">
+                        <div class="detail">
+                        <h5 style="color: #ff0000;font-weight: 900;">5.5%</h5>
+                        <p style="font-size: 12px;">Presentasi harian</p>
+                        </div>
+                        <div class="detail">
+                        <h5>Rp 2.750</h5>
+                        <p style="font-size: 12px;">Deviden Harian</p>
+                        </div>
+                        <div class="detail">
+                        <h5>Rp 247.500</h5>
+                        <p style="font-size: 12px;">Total Deviden</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form action="" method="" class="action-section" style="position: relative;top: 0;padding: 5px;width: 100%;font-size: 15px;background-color: white;border-radius: 10px;">
+                        <div class="price">
+                        <h3 style="width: 100%;color: #f59f00;">Rp 50.000</h3>
+                        </div>
+                        <button class="buy-button">Beli sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="content-produk-tinggi" class="tab-content" style="display: none;">
+            <!-- Konten Produk Penghasilan Tinggi -->
+            <div class="product-section">
+                <div style="display: flex;flex-direction: row;">
+                    <div class="product-image" style="margin-right: 10px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" style="width: 100%;border-radius: 30px;">
+                    </div>
+                    <div class="product-info">
+                    <h4>Produk Penghasilan Tinggi</h4>
+                    <p class="small-text" style="text-align:center;padding: 10px;margin-bottom:10px;color:#14a745;background-color: #82ffac;">Sisa pembelian <b>1</b></p>
+                    <p class="small-text" style="text-align:center;padding: 10px;color:#4285f4;background-color: rgba(120, 171, 253, 0.467);">Siklus <b>90 Hari</b></p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;justify-content: center;">
+                    <div class="details-section">
+                        <div class="detail">
+                        <h5 style="color: #ff0000;font-weight: 900;">5.5%</h5>
+                        <p style="font-size: 12px;">Presentasi harian</p>
+                        </div>
+                        <div class="detail">
+                        <h5>Rp 2.750</h5>
+                        <p style="font-size: 12px;">Deviden Harian</p>
+                        </div>
+                        <div class="detail">
+                        <h5>Rp 247.500</h5>
+                        <p style="font-size: 12px;">Total Deviden</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form action="" method="" class="action-section" style="position: relative;top: 0;padding: 5px;width: 100%;font-size: 15px;background-color: white;border-radius: 10px;">
+                        <div class="price">
+                        <h3 style="width: 100%;color: #f59f00;">Rp 50.000</h3>
+                        </div>
+                        <button class="buy-button">Beli sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="menu-sticky">
+        <ul>
+            <li><a href="#home">
+                <div>
+                    <i class="fa fa-home" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Beranda</p>
+                </div>
+            </a></li>
+            <li><a href="produk.html">
+                <div>
+                    <i class="fa fa-cart-shopping" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Produk</p>
+                </div>
+            </a></li>
+            <li>
+                <a href="#highlight">
+                    <div class="highlight">
+                        <img src="flash.png" alt="Highlight">
+                    </div>
+                </a>
+            </li>
+            <li><a href="anggota.html">
+                <div>
+                    <i class="fa fa-users" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Anggota</p>
+                </div>
+            </a></li>
+            <li><a href="akun.html">
+                <div>
+                    <i class="fa fa-cog" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Akun</p>
+                </div>
+            </a></li>
+        </ul>
+    </footer>
+    <script>
+        // Pilih elemen tombol dan konten
+        const btnProdukDasar = document.getElementById('tab-produk-dasar');
+        const btnProdukTinggi = document.getElementById('tab-produk-tinggi');
+        const contentProdukDasar = document.getElementById('content-produk-dasar');
+        const contentProdukTinggi = document.getElementById('content-produk-tinggi');
+
+        // Fungsi untuk menampilkan tab yang dipilih
+        function showTab(tab) {
+            if (tab === 'dasar') {
+                contentProdukDasar.style.display = 'block';
+                contentProdukTinggi.style.display = 'none';
+                btnProdukDasar.classList.add('tab-active');
+                btnProdukTinggi.classList.remove('tab-active');
+            } else if (tab === 'tinggi') {
+                contentProdukDasar.style.display = 'none';
+                contentProdukTinggi.style.display = 'block';
+                btnProdukDasar.classList.remove('tab-active');
+                btnProdukTinggi.classList.add('tab-active');
+            }
+        }
+
+        // Atur tab aktif secara default saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('dasar'); // Tampilkan tab Produk Dasar sebagai default
+        });
+
+        // Event listener untuk tombol
+        btnProdukDasar.addEventListener('click', () => showTab('dasar'));
+        btnProdukTinggi.addEventListener('click', () => showTab('tinggi'));
+    </script>
+</body>
+</html>

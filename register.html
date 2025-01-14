@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deskripsi singkat tentang halaman ini.">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Web Development">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://www.contohdomainanda.com">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="awal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .bg-image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body style="background-color: white;">
+    <div>
+        <img src="g6.jpeg" style="width: 100%;opacity: 0.5;">
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <img src="https://placehold.co/400?text=LOGO" style="width: 100px;position: absolute;top: 40px;">
+        </div>
+    </div>
+    <form action="#" method="POST" style="margin: 10px;">
+        <h5 style="text-align: center; font-weight: 900; font-size: 20px; margin-bottom: 20px;">BUAT AKUN ANDA</h5>
+
+        <div style="margin-bottom: 20px;">
+            <label for="nomor-hp" style="font-size: 12px;">Nomor HP</label>
+            <input type="tel" id="nomor-hp" name="nomor_hp" placeholder="Masukkan Nomor HP" style="width: 100%; border: none; border-bottom: 1px solid black; background: transparent; padding: 10px; outline: none; font-size: 16px;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="kata-sandi" style="font-size: 12px;">Kata Sandi</label>
+            <input type="password" id="kata-sandi" name="kata_sandi" placeholder="Masukkan Kata Sandi" style="width: 100%; border: none; border-bottom: 1px solid black; background: transparent; padding: 10px; outline: none; font-size: 16px;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="ulangi-sandi" style="font-size: 12px;">Ulangi Sandi</label>
+            <input type="password" id="ulangi-sandi" name="ulangi_sandi" placeholder="Masukkan Ulang Kata Sandi" style="width: 100%; border: none; border-bottom: 1px solid black; background: transparent; padding: 10px; outline: none; font-size: 16px;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="kode-undangan" style="font-size: 12px;">Kode Undangan</label>
+            <input type="text" id="kode-undangan" name="kode_undangan" placeholder="Masukkan Kode Undangan" style="width: 100%; border: none; border-bottom: 1px solid black; background: transparent; padding: 10px; outline: none; font-size: 16px;">
+        </div>
+        <p style="text-align: end;margin-bottom: 10px;">
+            Sudah Memiliki Akun ?<a href="login.html" style="margin-left:5px;font-weight:bold;text-decoration: none;color:black;">Login</a>
+        </p>
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <button type="submit" style="width: 50%; padding: 10px; background-color: black; color: white; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer;">Daftar</button>
+        </div>
+    </form>
+</body>
+</html>

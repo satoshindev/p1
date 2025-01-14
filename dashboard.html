@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deskripsi singkat tentang halaman ini.">
+    <meta name="author" content="Nama Anda">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Web Development">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://www.contohdomainanda.com">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+</head>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '#image-carousel' ).mount();
+    } );
+  </script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .bg-dasar {
+        background-color: white;
+    }
+    .navbar-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(56, 56, 56);
+    }
+    .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .menu-first {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom dengan ukuran sama */
+        gap: 10px; /* Jarak antar menu */
+    }
+
+    .menu-item {
+        padding: 5px;
+        text-align: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.05); /* Efek saat hover */
+    }
+    .menu-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer.menu-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f59f00;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    footer.menu-sticky ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    footer.menu-sticky li {
+        text-align: center;
+    }
+
+    footer.menu-sticky a {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    footer.menu-sticky a div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer.menu-sticky .highlight {
+        background: yellow;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        border: 3px solid black;
+    }
+
+    footer.menu-sticky .highlight img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+</style>
+<body class="bg-dasar">
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div style="height: 200px;">
+                        <img src="https://placehold.co/400?text=GAMBAR" alt="">
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+    <div style="margin: 10px;">
+        <div class="menu-first">
+            <a href="deposit.html" class="menu-item">
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <img src="bank.png" style="width: 40px;height: auto;" alt="Menu">
+                    <p style="font-size: 12px;font-weight: bold;color:black;">Isi Ulang</p>
+                </div>
+            </a>
+            <a href="penarikan.html" class="menu-item">
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <img src="atm-card.png" style="width: 40px;height: auto;" alt="Menu">
+                    <p style="font-size: 12px;font-weight: bold;color:black;">Menarik</p>
+                </div>
+            </a>
+            <a href="checkin.html" class="menu-item">
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <img src="check.png" style="width: 40px;height: auto;" alt="Menu">
+                    <p style="font-size: 12px;font-weight: bold;color:black;">Check In</p>
+                </div>
+            </a>
+            <a href="transaksi.html" class="menu-item">
+                <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <img src="report.png" style="width: 40px;height: auto;" alt="Menu">
+                    <p style="font-size: 12px;font-weight: bold;color:black;">Transaksi</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="margin: 10px;">
+        <div class="menu-info">
+            <div class="menu-item" style="width: 100%;margin-right: 5px;background-color: #f59f00;color: white;font-weight: bold;">
+                <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                    <img src="whatsapp.png" style="width: 40px;height: auto;margin-right: 5px;" alt="Menu">
+                    <p>Whatsapp</p>
+                </div>
+            </div>
+            <div class="menu-item" style="width: 100%;margin-right: 5px;background-color: #f59f00;color: white;font-weight: bold;">
+                <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                    <img src="user-interface.png" style="width: 40px;height: auto;margin-right: 5px;" alt="Menu">
+                    <p>Aplikasi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <marquee style="border-top: 1px solid black;border-bottom: 1px solid black;padding: 10px; margin-top: 10px;">
+        Informasi
+    </marquee>
+    <div style="margin-top: 20px; margin-left: 10px;margin-right: 10px;">
+        <div class="menu-info">
+            <a href="klaimgaji.html" class="menu-item" style="width: 100%;">
+                <div style="width:100%;display: flex;padding:10px;flex-direction: row;justify-content: center;border: 3px solid #f59f00;border-radius: 10px;align-items: center;">
+                    <img src="gift-card.png" style="width: 50px;margin: 5px;">
+                    <p style="margin-bottom: 0;font-weight: 900;color:#f59f00;font-size:12px;">Klaim Bonus</p>
+                </div>
+            </a>
+            <a href="spin.html" class="menu-item" style="width: 100%;">
+                <div style="width:100%;display: flex;padding:10px;flex-direction: row;justify-content: center;border: 3px solid #f59f00;border-radius: 10px;align-items: center;">
+                    <img src="announcement.png" style="width: 50px;margin: 5px;">
+                    <p style="margin-bottom: 0;font-weight: 900;color:#f59f00;font-size:12px;">Pengumuman</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="width: 100%;margin-top: 20px;">
+        <img src="https://placehold.co/400?text=GAMBAR" style="width: 100%;margin-bottom: 83px;" alt="image">
+    </div>
+    <footer class="menu-sticky">
+        <ul>
+            <li><a href="#home">
+                <div>
+                    <i class="fa fa-home" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Beranda</p>
+                </div>
+            </a></li>
+            <li><a href="produk.html">
+                <div>
+                    <i class="fa fa-cart-shopping" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Produk</p>
+                </div>
+            </a></li>
+            <li>
+                <a href="#highlight">
+                    <div class="highlight">
+                        <img src="flash.png" alt="Highlight">
+                    </div>
+                </a>
+            </li>
+            <li><a href="anggota.html">
+                <div>
+                    <i class="fa fa-users" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Anggota</p>
+                </div>
+            </a></li>
+            <li><a href="akun.html">
+                <div>
+                    <i class="fa fa-cog" style="font-size: 20px;color:black"></i>
+                    <p style="color:black">Akun</p>
+                </div>
+            </a></li>
+        </ul>
+    </footer>
+</body>
+</html>
